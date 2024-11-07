@@ -295,10 +295,11 @@ A red horizontal line (see figure below) indicates whether an observation is abo
 
 ``` r
 
-### Basic plot
 
-plot <- VhgIdentityScatterPlot(vh_file,cutoff = 1e-5)
-plot(plot)
+scate_plot <- VhgIdentityScatterPlot(vh_file,cutoff = 1e-5,
+                                     highlight_groups = c("Gemini_Rep","Genomo_Rep"))
+
+plot(scate_plot$plot)
 
 ```
 ![VhgIdentityScatterPlot](https://raw.githubusercontent.com/SergejRuff/plots_examples/main/virusparies_images/scate_plot.png)
