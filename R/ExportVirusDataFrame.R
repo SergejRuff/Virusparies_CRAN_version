@@ -80,9 +80,9 @@ ExportVirusDataFrame <- function(df,
   }
 
   # If dir_path is NULL, use current working directory
-  if (is.null(dir_path)) {
-    dir_path <- getwd()
-  }
+  # if (is.null(dir_path)) {
+  #   dir_path <- getwd()
+  # }
 
   # Check if the directory path should be created
   if (create_path && !dir.exists(dir_path)) {

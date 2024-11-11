@@ -103,9 +103,9 @@ ExportVirusGt <- function(gtable,
 
   if(export_gt_obj){
 
-    if(is.null(path)){
-      path <- getwd()
-    }
+    # if(is.null(path)){
+    #   path <- getwd()
+    # }
 
     filename_without_extension <- tools::file_path_sans_ext(filename)
     new_filename <- paste0(filename_without_extension, ".rds")
